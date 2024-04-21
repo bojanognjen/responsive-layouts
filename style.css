@@ -1,0 +1,25 @@
+:root {
+    --clr-beige: #f3eed9;
+    --clr-black: #222c2a;
+    --clr-brown: #824936;
+
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-playfair: 'Playfair Display';
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    min-height: 660px;
+    background-color: var(--clr-beige);
+    width: 100%;
+}
+
+.container {
+    max-width: 1128px;
+    width: 80%;
+}
