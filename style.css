@@ -13,13 +13,137 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--ff-roboto);
+    color: var(--clr-black);
+}
+
 .main {
+    font-size: 18px;
+}
+.header {
     min-height: 660px;
     background-color: var(--clr-beige);
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third__section {
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    width: 100vw;
+    font-size: 1.125rem;
 }
 
 .container {
     max-width: 1128px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: var(--clr-beige);
+    font-family: var(--ff-playfair);
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.header__heading {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: var(--clr-black);
+}
+
+.header__title {
+    margin-top: 1rem;
+    font-size: 3.75rem;
+    font-family: var(--ff-playfair);
+    color: var(--clr-brown);
+    width: 70%;
+}
+
+.row {
+    display: flex;
     width: 80%;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+
+
+.first__section--heading {
+    color: var(--clr-brown);
+    font-family: var(--ff-playfair);
+    font-weight: 900;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.first__section {
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+}
+
+.first__section--row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0 4rem;
+}
+
+.second__section {
+    background-color: var(--clr-black);
+    color: #fff;
+}
+
+.third__section {
+    background-color: var(--clr-brown);
+}
+
+.col {
+    width: 47%;
+}
+
+:is(.second__section, .third__section) p {
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third__section .row:last-child {
+        flex-direction: column-reverse;
+    }  
+    .col {
+        width: 100%;
+    }
+
+    .img {
+        max-width: 90%;
+        margin-top: 2rem;
+    }
+
+    .first__section--row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    p, h2 {
+        text-align: center;
+    }
 }
