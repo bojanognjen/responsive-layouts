@@ -18,9 +18,6 @@ body {
     color: var(--clr-black);
 }
 
-.main {
-    font-size: 18px;
-}
 .header {
     min-height: 660px;
     background-color: var(--clr-beige);
@@ -145,5 +142,8 @@ h2{
     }
     p, h2 {
         text-align: center;
+    }
+    .header__title {
+        font-size: 3rem;
     }
 }
